@@ -387,7 +387,7 @@ body{
 	
 /*Section 1 homepage main*/
 .main-wrap{
-	background: url(images/banner3.jpg) fixed no-repeat center / cover;
+	background: url(images/banner.jpg) fixed no-repeat center / cover;
 	height: 100vh;
 	min-height: 750px;
 	position: relative;
@@ -414,7 +414,7 @@ body{
 
 	.internetexplorer .main-wrap,
 	.microsoftedge .main-wrap{
-		background: url(images/banner3.jpg) scroll no-repeat center / cover;
+		background: url(images/banner.jpg) scroll no-repeat center / cover;
 	}
 
 	/*Tagline*/
@@ -629,7 +629,7 @@ body{
 		display: block;
 		width: 100%;
 		min-height: 340px;
-		background: url(images/about-photo2.jpg) no-repeat center / cover;
+		background: url(images/about-photo.jpg) no-repeat center / cover;
     	box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.4);
 	}
 
@@ -1308,7 +1308,7 @@ MEDIA QUERIES
 	}
 
 	.main-wrap {
-	    background: url(images/banner3.jpg) scroll no-repeat center / cover;
+	    background: url(images/banner.jpg) scroll no-repeat center / cover;
 	    height: auto;
 	}
 
@@ -1373,11 +1373,11 @@ MEDIA QUERIES
 	}
 
 	.services-wrap::after {
-	    background: url(images/services-bg.jpg) no-repeat center bottom scroll / cover;
+	    background: url(images/services-bg.jpg) scroll no-repeat center bottom / cover;
 	}
 
 	.contact-wrap {
-	    background: url(images/contact-bg.jpg) no-repeat center scroll / cover;
+	    background: url(images/contact-bg.jpg) scroll no-repeat center  / cover;
 	    text-align: center;
 	}
 
