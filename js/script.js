@@ -3,13 +3,20 @@
 	var app =  {
 
 		init: function(){
+			this.browserDetector();
 			this.scrollFunction();
 			this.featpropFunction();
 			this.chainHeightFunction();
 			this.fixedNavFunction();
 			this.magnificPopUpFunction();
-			// this.modalFunction();
 			this.modalLinksFunction();
+		},
+
+		browserDetector: function(){
+			var browserName = bowser.name; 
+			var browserNameLowerCase = browserName.toLowerCase();
+			var browserNameTrim = browserNameLowerCase.replace(/\s+/g, '');
+			$('html').addClass(browserNameTrim);
 		},
 
 		magnificPopUpFunction: function(){
@@ -30,7 +37,7 @@
 
 			$('.arrows').click(function(){ 
 				$("html, body").animate({ 
-					scrollTop: $('#about-id').offset().top 
+					scrollTop: $('#contact-id').offset().top 
 				}, "slow"); 
 			})
 
@@ -154,7 +161,8 @@
 
 		modalLinksFunction: function(){
 
-			$('.modal-readmore-link').click(function() {
+			$('.modal-readmore-link').click(function(e) {
+				e.preventDefault();
 				$('.p-hide').slideToggle( "fast", function() {
 					if($('.p-hide').is(':visible')){
 						$('.modal-readmore-link').text('Read Less');
