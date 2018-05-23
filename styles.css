@@ -1,5 +1,4 @@
-/*/
-
+/*
 Website Name: KMC Savills Adwords
 Theme URI: 
 Description: KMC Savills Adwords Website
@@ -8,7 +7,6 @@ Version: 1.0
 Tags: 
 License: 
 License URI: 
-
 */
 
 
@@ -366,7 +364,7 @@ body{
 		display: inline-block;
 	    vertical-align: middle;
 	    color: #fff;
-	    font-size: 12px;
+	    font-size: 14px;
 	    font-weight: 300;
 	    max-width: 175px;
 	}
@@ -429,7 +427,7 @@ body{
 	    line-height: 1.2;
 	    color: #fff;
 	    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
-	    margin-top: 155px;
+	    margin-top: 105px;
 	}
 
 	.tagline span{
@@ -487,25 +485,18 @@ body{
 	    display: inline-block;
 	    vertical-align: top;
 	    position: relative;
-	    padding-left: 10px;
 	    margin-right: 10px;
+	    margin-bottom: 10px;
 	    line-height: 1;
 	    text-transform: uppercase;
 	}
 
-	.locations ul {
-	    list-style-type: disc;
+	.locations ul > li i{
+		font-style: normal;
 	}
 
-	.locations ul li::before {
-	    content: '';
-	    position: absolute;
-	    left: 0;
-	    top: 5px;
-	    height: 4px;
-	    width: 4px;
-	    background: #fff;
-	    border-radius: 50%;
+	.locations ul {
+	    list-style-type: disc;
 	}
 
 	.locations ul li ul li::before {
@@ -529,6 +520,7 @@ body{
 	.locations .loc-sub-links li{
 		display: block;
 		margin: 4px 0;
+		padding-left: 10px;
 	}
 
 	.locations .loc-links .loc-sub-links li a{
@@ -916,28 +908,29 @@ body{
 	    text-transform: uppercase;
 	    padding: 10px;
 	    font-weight: 700;
+	    display: block;
 	}
 
 		/*hover*/
-		.featprop-item a:hover .featprop-img::before {
+		.featprop-item .featprop-item-main:hover .featprop-img::before {
 		    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,110%,0);
 		    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,110%,0);
 		}
 
-		.featprop-item a:hover .featprop-img::after {
+		.featprop-item .featprop-item-main:hover .featprop-img::after {
 			opacity: 0.7;
 		}
 
-		.featprop-item a:hover .featprop-hover{
+		.featprop-item .featprop-item-main:hover .featprop-hover{
 			top: 30px;
 		}
 
-		.featprop-item a:hover .featprop-item-label{
+		.featprop-item .featprop-item-main:hover .featprop-item-label{
 			opacity: 0;
 			visibility: hidden;
 		}
 
-		.featprop-item a:hover .featprop-btn{
+		.featprop-item .featprop-item-main:hover .featprop-btn{
 			bottom: 0;
 		}
 
@@ -1394,28 +1387,20 @@ MEDIA QUERIES
 		margin: 0 auto 40px;
 	}
 
-	.locations ul > li {
-	    display: block;
-	    margin-bottom: 20px;
-	}
-
 	.locations ul > li > a{
 		font-size: 15px;
 	}
 
-	.locations .loc-sub-links{
+	.locations .loc-sub-links,
+	.locations ul > li:hover .loc-sub-links{
 		position: relative;
-		display: block;
+		display: none;
 	}
 
 	.locations .loc-sub-links li {
 	    display: block;
 	    margin: 4px 0;
-	}
-
-	.parent-link {
-	    border-bottom: 1px solid #ccc;
-	    padding-bottom: 5px;
+	    padding-left: 0;
 	}
 
 	.locations ul li::before,
@@ -1490,6 +1475,28 @@ MEDIA QUERIES
 
 	.contact-label{
 		margin-top: 0;
+	}
+
+
+	/*Fonts*/
+	.hc-field a,
+	.featprop-item-label,
+	.tagline-desc,
+	.about-desc,
+	.contact-desc{
+		font-size: 16px;
+	}
+
+	.smi a{
+		font-size: 25px;
+	}
+
+	.contact-form input, 
+	.contact-form textarea,
+	.services-modal .modal-body,
+	.footer-disclaimer,
+	.footer-credits{
+		font-size: 14px;
 	}
 
 
