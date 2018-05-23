@@ -149,13 +149,11 @@
 		        	e.preventDefault();
 		        	var fpLink = jQuery(this).attr('href');
 		        	$('.featprop-btn').click(function(){
-		        		window.location.href = fpLink;
+		        		window.open( fpLink , '_blank');
 		        	})
 		        })	
 	        }
 	        
-
-
 		},
 
 		modalFunction: function(){
@@ -194,8 +192,6 @@
 
 		}
 
-
-
 	} 
 
 	$(document).ready( function() {
@@ -208,6 +204,7 @@
 
 	$(window).resize(function () { 
 		app.chainHeightFunction();
+		app.featpropFunction();
 	});
 	
 })(jQuery);
