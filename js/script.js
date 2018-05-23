@@ -41,7 +41,6 @@
 				}, "slow"); 
 			})
 
-			// ===== Scroll to Top ==== 
 			$(window).scroll(function() {
 			    if ($(this).scrollTop() > 150) {        
 			        $('#return-to-top').fadeIn(200);   
@@ -144,6 +143,18 @@
 	            prevArrow: '<div class="slick-prev fp-arrows far fa-arrow-alt-circle-left"></div>',
 	            nextArrow: '<div class="slick-next fp-arrows far fa-arrow-alt-circle-right"></div>'
 	        });
+
+	        if($(window).width() < 992){
+	        	$('.featprop-link').click(function(e){
+		        	e.preventDefault();
+		        	var fpLink = jQuery(this).attr('href');
+		        	$('.featprop-btn').click(function(){
+		        		window.location.href = fpLink;
+		        	})
+		        })	
+	        }
+	        
+
 
 		},
 
