@@ -1230,7 +1230,7 @@ body{
 	}
 
 	.footer-disclaimer {
-	    font-size: 10px;
+	    font-size: 12px;
 	    max-width: 800px;
 	    width: 100%;
 	    margin: 30px auto;
@@ -1321,6 +1321,10 @@ MEDIA QUERIES
 
 	.featprop-item-label{
 		font-size: 13px
+	}
+
+	.locations ul > li{
+		margin-right: 8px;
 	}
 }
 
